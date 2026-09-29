@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Mute My Mic App - mute every microphone on your Mac in one click</title>
+  <meta name="description" content="Mute My Mic App mutes all microphones on your Mac from the menu bar, leaving speakers and volume alone. Free, tiny, and ready in one click.">
+  <meta property="og:title" content="Mute My Mic App">
+  <meta property="og:description" content="Mute every microphone on your Mac in one click. Speakers and volume left alone.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <img
+        class="hero-icon"
+        src="assets/icon-256.png"
+        width="160"
+        height="160"
+        alt="Mute My Mic App icon: a microphone split in half, green on the left and red on the right, standing between two vertical bars.">
+      <h1>Mute My Mic App</h1>
+      <p class="tagline">
+        Mute every microphone on your Mac from the menu bar, in one click.
+        Speakers and volume are left alone.
+      </p>
+
+      <div class="actions">
+        <a
+          class="btn btn-primary"
+          href="https://github.com/mumayankteam/mute-my-mic/releases/latest/download/Mute-My-Mic-App.zip">
+          <svg class="btn-glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path d="M8 1v9M4.5 6.5 8 10l3.5-3.5M2.5 13h11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Download for macOS
+        </a>
+        <a
+          class="btn btn-secondary"
+          href="https://github.com/sponsors/mumayankteam?frequency=one-time&amp;amount=3">
+          <svg class="btn-glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path d="M8 13.5S2 10 2 6.2A3.2 3.2 0 0 1 8 4.4a3.2 3.2 0 0 1 6 1.8C14 10 8 13.5 8 13.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          </svg>
+          Sponsor me
+        </a>
+      </div>
+
+      <p class="meta">macOS 14 or later &middot; Apple Silicon and Intel &middot; 716&nbsp;KB</p>
+
+      <p class="note">
+        <strong>First time only:</strong> right-click the app and choose <strong>Open</strong>.
+        macOS asks because this build is not notarized. After that it opens normally.
+      </p>
+    </header>
+
+    <section class="details" aria-labelledby="what-it-does">
+      <h2 id="what-it-does">What it does</h2>
+      <ul class="feature-list">
+        <li>Toggles every Core Audio input at once, with a click or <kbd>&#8984;M</kbd></li>
+        <li>Leaves speakers and output volume untouched</li>
+        <li>Starts muted and remembers what you chose</li>
+        <li>Catches devices that appear later, like a Bluetooth headset mic</li>
+        <li>Lives in the menu bar, so there is no Dock icon in the way</li>
+      </ul>
+
+      <h2>Why it is honest about muting</h2>
+      <p>
+        Mute is best-effort through Core Audio properties, not a kernel driver.
+        It sets the input mute and input volume on every device that has an input
+        scope, and re-applies that state when devices change. No absolute
+        guarantees are claimed, because none can be made.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Free to use. Built by
+      <a href="https://github.com/mumayankteam">mumayankteam</a>.
+    </p>
+    <p class="footer-note">
+      Liking it? A one-time
+      <a href="https://github.com/sponsors/mumayankteam?frequency=one-time&amp;amount=3">coffee</a>
+      keeps it maintained.
+    </p>
+  </footer>
+</body>
+</html>
